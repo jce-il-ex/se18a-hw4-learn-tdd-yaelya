@@ -7,7 +7,7 @@ Learn Mocha [![Build Status](https://travis-ci.org/docdis/learn-mocha.png?branch
 
 ![Cowboy Coder](http://i.imgur.com/N0VqWcL.png "Cowboy Coder")
 
-We all know *Cowboy Coders*. (*If you don't, its you!*)
+We all know *Cowboy Coders*. (*If you don't, it's you!*)
 
 The "*I just get things done*" developer who writes "*quick fixes*" and
 maintains "*I don't have time to write tests*" or
@@ -84,7 +84,7 @@ a good example to use. (*think of better TDD example*? *tell me*!)
 > Return: **Change To Customer** (notes and coins).
 
 Essentially we are building a *simple* **calculator** that *only does* **subtraction**
-(Total - Cash = Change), but also splits the **result** into the various **notes & coins**.
+(Cash - Total = Change), but also splits the **result** into the various **notes & coins**.
 
 In the UK we have the following Notes & Coins:
 
@@ -215,7 +215,7 @@ e.g:
 ```js
 totalPayable = 210         // £2.10
 cashPaid     = 300         // £3.00
-dfference    =  90         // 90p
+difference   =  90         // 90p
 change       = [50,20,20]  // 50p, 20p, 20p
 ```
 
@@ -250,11 +250,11 @@ This will pass:
 This only works *once*. When the Spec (Test) Writer writes the next test, the method will need
 to be re-written to satisfy it.
 
-Lets try it.  Work out what you expect:
-```
+Let's try it.  Work out what you expect:
+```javascript
 totalPayable = 486           // £4.86
 cashPaid     = 1000          // £10.00
-dfference    = 514           // £5.14
+difference   = 514           // £5.14
 change       = [500,10,2,2]  // £5, 10p, 2p, 2p
 ```
 
@@ -287,8 +287,8 @@ The *Arthur Andersen Approach* gets results:
 
 ![Mocha 3 Passing](./images/mocha-3-passing.png "Mocha 3 Passing")
 
-But its arguably *more work* than simply *solving* the problem.
-Lets do that instead.
+But it's arguably *more work* than simply *solving* the problem.
+Let's do that instead.
 (**Note**: this is the *readable* version of the solution! feel free to suggest a more compact algorithm)
 
 ```javascript
@@ -318,10 +318,10 @@ C.getChange = function (totalPayable, cashPaid) {
 
 Add one more test to ensure we are *fully* exercising our method:
 
-```
+```javascript
 totalPayable = 1487                                 // £14.87  (fourteen pounds and eighty-seven pence)
 cashPaid     = 10000                                // £100.00 (one hundred pounds)
-dfference    = 8513                                 // £85.13
+difference   = 8513                                 // £85.13
 change       = [5000, 2000, 1000, 500, 10, 2, 1 ]   // £50, £20, £10, £5, 10p, 2p, 1p
 ```
 
@@ -408,7 +408,7 @@ There's no hard+fast rule for "*which testing framework is the best one*?"
 Over the past 3 years I've tried:
 [Assert (Core Module)](http://nodejs.org/api/assert.html),
 [Cucumber](https://github.com/cucumber/cucumber-js),
-[Expresso](https://github.com/visionmedia/expresso)
+[Expresso](https://github.com/visionmedia/expresso),
 [Jasmine](https://github.com/mhevery/jasmine-node),
 [Mocha](https://github.com/mochajs/mocha),
 [Nodeunit](https://github.com/caolan/nodeunit),
@@ -436,7 +436,6 @@ Advanced:
 
 #### Other Mocha Tutorials/Background
 
-- DailyJS Mocha: http://dailyjs.com/2011/12/08/mocha/
 - Azat's Mocha Tutorial: http://webapplog.com/test-driven-development-in-node-js-with-mocha/
 - NetTuts: http://net.tutsplus.com/tutorials/javascript-ajax/better-coffeescript-testing-with-mocha/
 - Grunt.js Mocha Plugins: http://gruntjs.com/plugins/mocha
@@ -460,7 +459,6 @@ Advanced:
 
 #### Trying to think of a good example for TDD ...
 
-- Bowling: http://www.objectmentor.com/resources/articles/xpepisode.htm
 - Sudoku: http://johannesbrodwall.com/2010/04/06/why-tdd-makes-a-lot-of-sense-for-sudoko/
 - Vending machine.
 - Cash Register.
@@ -473,7 +471,7 @@ Code without tests is like a *building without a foundation*!
 
 ![Building Collapse](http://i.imgur.com/Iske6zG.jpg "Building Collapse")
 
-Its only a matter of *time* before it all comes crashing down ...
+It's only a matter of *time* before it all comes crashing down ...
 
 Is Test Driven Development (TDD) a *silver bullet* for *all* my software
 development woes? *Short answer*: **No**.
